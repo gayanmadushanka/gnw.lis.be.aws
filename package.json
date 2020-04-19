@@ -1,0 +1,13 @@
+{
+  "name": "gnw_lis_be",
+  "version": "1.0.0",
+  "description": "legal integrated system",
+  "repository": "https://bitbucket.org/gayanmadushanka/gnw.lis.be",
+  "author": "Gayan Madushanka",
+  "license": "MIT",
+  "dependencies": {
+    "docxtemplater": "^3.17.6",
+    "pizzip": "^3.0.6"
+  },
+  "scripts": {}
+}

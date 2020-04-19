@@ -9,7 +9,7 @@ const AWS = require("aws-sdk");
 var s3 = new AWS.S3();
 
 exports.lambdaHandler = async (event, context) => {
-  var bucketName = "gnw-lis-source";
+  var bucketName = "sl-gmadushanka-gnw-lis-api-source";
   // var filename = "abc.csv";
   var filename = "tag-example.docx";
 

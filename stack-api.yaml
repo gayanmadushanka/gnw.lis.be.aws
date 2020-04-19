@@ -34,12 +34,19 @@ Resources:
             Path: /hello
             Method: get
       Policies:
+        - S3CrudPolicy:
+            BucketName: !Sub "${AWS::StackName}-source"
         - Version: "2012-10-17"
           Statement:
             - Effect: Allow
               Action:
                 - "s3:*"
               Resource: "*"
+
+  SourceBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub "${AWS::StackName}-source"
 
 Outputs:
   # ServerlessRestApi is an implicit API created out of Events key under Serverless::Function
